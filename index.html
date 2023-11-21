@@ -1,0 +1,124 @@
+<!--O script manipula um elemento no HTML identificado pelo id "digitando". Começa selecionando o elemento e definindo uma mensagem para simular a digitação de um título. A variável statusTitulo controla o estado do título, alternando entre a exibição das letras e uma pausa. Funções como apagarTitulo limpam o conteúdo do elemento, sleep introduz atrasos no script, e ativarLetra exibe as letras da mensagem uma por uma, criando o efeito de digitação. A função principal, loopTitulo, gerencia o loop de repetição do título, alternando entre a digitação e a pausa. A chamada loopTitulo(9) inicia o processo, repetindo o título nove vezes e criando um efeito de digitação intermitente -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Dev <span>Saber</span></h1>
+        <nav>
+            <ul aria-label="Navegação primária" class="navegacao-primaria">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <section aria-label="seção curriculo dowload Leonardo" class="section-div">
+        <div>
+            <h2>Hi There! I'm</h2>
+            <h2 id="digitando">Web Developer and UX/UI Design</h2>
+            <p>Olá, meu nome é Lucas e estou iniciando meus estudos mais a fundo no mundo da programação, postarei aqui os projetos quais eu estarei envolvido.</p>
+            <a href="#">Dowload CV</a>
+        </div>
+        <img src="./Imagens/foto.jpeg" alt="apresentação">
+    </section>
+    <main>
+        <article aria-label="seção sobre mim" class="sobre">
+            <div class="sobre_titulo">
+                <h1>About Me</h1>
+                <p>Professional Profile - There is All About me</p>
+                <div aria-label="Seção apenas de ilustrações de botões">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <img src="./Imagens/linguagens.png" alt="imagem ilustrativa">
+            <div class="sobre_conteudo">
+                <div class="sobre_texto">
+                    <h1>I'm Dev Saber - Lucas</h1>
+                    <p>
+                        Meu nome é Lucas e estou no segundo semestre do curso de Engenharia de Software. Com uma paixão por tecnologia desde sempre, estou sempre ansioso para desvendar os segredos por trás do mundo digital. Minha jornada inclui projetos de desenvolvimento web, exploração de linguagens de programação e até mesmo incursões na inteligência artificial. 
+                        <br>
+                        <br>
+                        Estou sedento por desafios que expandam meus horizontes e me preparem para o mercado de trabalho. Minha determinação e vontade de aprender me impulsionam a participar de grupos de estudos e eventos do setor. Agora, estou em busca de uma oportunidade no mercado de tecnologia, onde possa contribuir e continuar crescendo como engenheiro de software.
+                    </p>
+                </div>
+                <div class="sobre_info">
+                    <p><i class="fa-solid fa-calendar-days"></i>Date of Birth: 14 nov 2000</p>
+                    <p><i class="fa-shap fa-solid fa-laptop-code"></i>Freelance: Available</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Adress: Curitiba, Brazil</p>
+                    <p><i class="fa-shap fa-solid fa-globe"></i>Spoken Langage: Portuguese, English</p>
+                    <p><i class="fa-solid fa-flag"></i>Nationality: Brazil</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>Phone: +55 (41) 99532-7131</p>
+                    <p><i class="fa-solid fa-envelope"></i>E-mail: prolucasa2000@gmail.com</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <section class="services"> 
+        <div class="sobre_titulo">
+            <h1>About Me</h1>
+            <p>Professional Profile - There is All About me</p>
+            <div aria-label="Seção apenas de ilustrações de botões">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="my_services">
+            <ul aria-label="navegacao-secundaria">
+                <li>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h3>Web Design</h3>
+                    <p>Web design é a criação visual de sites, envolvendo cores, layouts e elementos gráficos. Estou ávido por aprender mais, explorar tendências, aprimorar habilidades em design e entender como a estética melhora a usabilidade. Quero aplicar isso para construir interfaces web atrativas e intuitivas.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Web Developer</h3>
+                    <p>Desenvolvimento web é criar sites e apps online, unindo programação e design. Tenho sede de aprender mais, explorar linguagens, aprimorar design responsivo e entender como elementos se integram para experiências únicas. Quero aplicar esse conhecimento para soluções web inovadoras.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Photography</h3>
+                    <p>Na interseção entre desenvolvimento e criatividade, a fotografia na área web capta visualmente a essência dos sites. Busco ampliar meu olhar nessa fusão, aprendendo a compor imagens que enriqueçam o design, compreendendo iluminação e enquadramento para criar experiências visuais memoráveis. Quero unir técnica e arte, elevando a narrativa visual online.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>SEO Analyst</h3>
+                    <p>Como SEO Analyst na área de desenvolvimento, mergulho na otimização de sites para melhorar sua visibilidade em mecanismos de busca. Busco aprimorar meu conhecimento, explorando algoritmos de pesquisa, palavras-chave e análise de dados. Quero impulsionar o tráfego orgânico, garantindo que os sites alcancem seu público de maneira eficaz.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Creative Design</h3>
+                    <p>No campo do desenvolvimento, como Creative Design, uno arte e tecnologia. Busco constantemente ampliar minha visão criativa, explorando conceitos de design inovadores, dominando ferramentas e experimentando com cores e formas. Quero aplicar essa abordagem única para criar soluções visuais impactantes e cativantes na web.</p>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                    <h3>UI/UX</h3>
+                    <p>Na esfera do desenvolvimento, foco em UI/UX, moldando interações digitais. Estou sempre sedento por aprender mais, explorando princípios de design, aprimorando habilidades em prototipagem e compreendendo a psicologia do usuário. Meu objetivo é criar experiências online intuitivas e envolventes, unindo estética e funcionalidade.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
